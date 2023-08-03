@@ -1,3 +1,5 @@
+package Entities;
+
 public class SinhVienBiz extends SinhVienTechMaster{
     private float marketing;
     private float sales;

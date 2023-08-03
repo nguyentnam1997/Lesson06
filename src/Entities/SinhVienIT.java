@@ -1,3 +1,5 @@
+package Entities;
+
 public class SinhVienIT extends SinhVienTechMaster{
     private float java;
     private float html;

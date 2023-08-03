@@ -1,3 +1,5 @@
+package Entities;
+
 public class Bus extends Traffic{
     public static final int speed = 20;
 

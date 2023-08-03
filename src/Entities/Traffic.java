@@ -1,3 +1,5 @@
+package Entities;
+
 public abstract class Traffic {
 
     public abstract double timeTravel(double distance);

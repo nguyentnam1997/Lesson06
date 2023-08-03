@@ -1,3 +1,5 @@
+package Entities;
+
 public abstract class SinhVienTechMaster {
     protected String name;
     protected String major;

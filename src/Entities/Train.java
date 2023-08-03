@@ -1,3 +1,5 @@
+package Entities;
+
 public class Train extends Traffic {
     public static final int speed = 40;
     @Override

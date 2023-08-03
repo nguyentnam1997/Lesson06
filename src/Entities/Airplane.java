@@ -1,3 +1,5 @@
+package Entities;
+
 public class Airplane extends Traffic{
     public static final int speed = 80;
 

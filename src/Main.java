@@ -1,6 +1,7 @@
-import javax.swing.*;
-import java.util.Arrays;
-import java.util.Locale;
+import Entities.SinhVienBiz;
+import Entities.SinhVienIT;
+import Entities.SinhVienTechMaster;
+
 import java.util.Scanner;
 
 public class Main {
@@ -15,11 +16,11 @@ public class Main {
 //                System.out.println("Giá trị không hợp lệ, mời nhập lại!");
 //                continue;
 //            }
-//            Bus bus = new Bus();
+//            Entities.Bus bus = new Entities.Bus();
 //            bus.print();
-//            Train train = new Train();
+//            Entities.Train train = new Entities.Train();
 //            train.print();
-//            Airplane airplane = new Airplane();
+//            Entities.Airplane airplane = new Entities.Airplane();
 //            airplane.print();
 //            break;
 //        }
