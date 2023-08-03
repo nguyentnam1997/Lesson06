@@ -26,4 +26,5 @@ public abstract class SinhVienTechMaster {
     public abstract float getDiem();
     public abstract String getHocLuc();
     public abstract String xuat();
+
 }

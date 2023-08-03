@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -24,7 +25,10 @@ public class Main {
 //        }
 //        while (true);
 
-        //BÀI TẬP 2
+        ////BÀI TẬP 2
+        //Tạo mảng để chứa thông tin sinh viên
+        SinhVienTechMaster[] arrSinhVien = new SinhVienTechMaster[10];
+        int index = 1;  //tạo bộ đếm để truy xuất thứ tự phần tử trong mảng
         do {
             System.out.println("Mời chọn sinh viên:");
             System.out.println("1. Sinh viên IT");
@@ -62,7 +66,9 @@ public class Main {
                                     continue;
                                 }
                                 SinhVienIT sinhVienIT = new SinhVienIT(name, major, java, html, css);
-                                System.out.println(sinhVienIT.xuat());
+                                //System.out.println(sinhVienIT.xuat());
+                                arrSinhVien[index - 1] = sinhVienIT;
+                                index++;
                                 break;
                             }
                             while (true);
@@ -97,7 +103,9 @@ public class Main {
                                 continue;
                             }
                             SinhVienBiz sinhVienBiz = new SinhVienBiz(name, major, marketing, sales);
-                            System.out.println(sinhVienBiz.xuat());
+                            //System.out.println(sinhVienBiz.xuat());
+                            arrSinhVien[index - 1] = sinhVienBiz;
+                            index++;
                             break;
                         }
                         while (true);
@@ -109,10 +117,13 @@ public class Main {
             System.out.println("Bạn có muốn tiếp tục? (Y/N)");
             String n = scanner.nextLine();
             if (n.equalsIgnoreCase("y")) {continue;}
-            else System.out.println("BAI!");
+
+            //In ra màn hình các phần tử của mảng
+            System.out.println("-------Thông tin Sinh viên --------");
+            for (int i = 0; i < index - 1; i++) {
+                System.out.println(arrSinhVien[i].xuat());
+            }
             break;
         } while (true);
-
-
     }
 }
