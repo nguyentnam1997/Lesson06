@@ -1,16 +1,13 @@
 public class Airplane extends Traffic{
-    private static final int speed = 80;
-    public Airplane(int distance) {
-        super(distance);
+    public static final int speed = 80;
+
+    @Override
+    public double timeTravel(double distance) {
+        return distance / speed;
     }
 
     @Override
-    public double timeTravel() {
-        return (double) getDistance() / speed;
-    }
-
-    @Override
-    public void print() {
-        System.out.println("Thời gian đến nơi của máy bay là: " + timeTravel() + "h");
+    public void print(double distance) {
+        System.out.println("Thời gian đến nơi của máy bay là: " + timeTravel(distance) + "h");
     }
 }

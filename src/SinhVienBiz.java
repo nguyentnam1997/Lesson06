@@ -25,8 +25,8 @@ public class SinhVienBiz extends SinhVienTechMaster{
     @Override
     public String xuat() {
         return "Sinh viên Biz { " +
-                "Họ tên: " + getName() +
-                ", ngành: " + getMajor() +
+                "Họ tên: " + name +
+                ", ngành: " + major +
                 ", điểm: " + getDiem() +
                 ", học lực: " + getHocLuc() +
                 " }";

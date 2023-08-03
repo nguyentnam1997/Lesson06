@@ -1,16 +1,12 @@
 public class Train extends Traffic {
-    private static final int speed = 40;
-    public Train(int distance) {
-        super(distance);
+    public static final int speed = 40;
+    @Override
+    public double timeTravel(double distance) {
+        return distance / speed;
     }
 
     @Override
-    public double timeTravel() {
-        return (double) getDistance() / speed;
-    }
-
-    @Override
-    public void print() {
-        System.out.println("Thời gian đến nơi của tàu hoả là: " + timeTravel() + "h");
+    public void print(double distance) {
+        System.out.println("Thời gian đến nơi của tàu hoả là: " + timeTravel(distance) + "h");
     }
 }

@@ -15,11 +15,11 @@ public class Main {
 //                System.out.println("Giá trị không hợp lệ, mời nhập lại!");
 //                continue;
 //            }
-//            Bus bus = new Bus(distance);
+//            Bus bus = new Bus();
 //            bus.print();
-//            Train train = new Train(distance);
+//            Train train = new Train();
 //            train.print();
-//            Airplane airplane = new Airplane(distance);
+//            Airplane airplane = new Airplane();
 //            airplane.print();
 //            break;
 //        }
