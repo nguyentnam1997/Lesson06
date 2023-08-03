@@ -1,60 +1,60 @@
 public class SinhVienIT extends SinhVienTechMaster{
-    private double java;
-    private double html;
-    private double css;
+    private float java;
+    private float html;
+    private float css;
 
-    public SinhVienIT(String name, String major, double java, double html, double css) {
+    public SinhVienIT(String name, String major, float java, float html, float css) {
         super(name, major);
         this.java = java;
         this.html = html;
         this.css = css;
     }
 
-    public double getJava() {
+    public float getJava() {
         return java;
     }
 
-    public void setJava(double java) {
+    public void setJava(float java) {
         this.java = java;
     }
 
-    public double getHtml() {
+    public float getHtml() {
         return html;
     }
 
-    public void setHtml(double html) {
+    public void setHtml(float html) {
         this.html = html;
     }
 
-    public double getCss() {
+    public float getCss() {
         return css;
     }
 
-    public void setCss(double css) {
+    public void setCss(float css) {
         this.css = css;
     }
 
     @Override
-    public double getDiem() {
+    public float getDiem() {
         return (2 * java + html + css) / 4;
     }
 
     @Override
     public String getHocLuc() {
         if (getDiem() < 5) return "Yếu";
-         else if (getDiem() >= 5 || getDiem() < 6.5) return "Trung bình";
-         else if (getDiem() >= 6.5 || getDiem() < 7.5) return "Khá";
-         else if (getDiem() >= 7.5 || getDiem() < 10) return "Giỏi";
-         else return null;
+         else if (getDiem() >= 5 && getDiem() < 6.5) return "Trung bình";
+         else if (getDiem() >= 6.5 && getDiem() < 7.5) return "Khá";
+         else if (getDiem() >= 7.5 && getDiem() < 10) return "Giỏi";
+         else return "Không xác định";
     }
 
     @Override
     public String xuat() {
         return "Sinh viên IT {" +
                 "Họ tên: " + getName() +
-                ", ngành:" + getMajor() +
-                ", điểm:" + getDiem() +
-                ", học lực:" + getHocLuc() +
-                '}';
+                ", ngành: " + getMajor() +
+                ", điểm: " + getDiem() +
+                ", học lực: " + getHocLuc() +
+                "}";
     }
 }

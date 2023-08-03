@@ -23,7 +23,7 @@ public abstract class SinhVienTechMaster {
         this.major = major;
     }
 
-    public abstract double getDiem();
+    public abstract float getDiem();
     public abstract String getHocLuc();
     public abstract String xuat();
 }
